@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjektApp", "ProjektApp.csproj", "{E239EE6C-977C-F364-379F-7E0BC2510CFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E239EE6C-977C-F364-379F-7E0BC2510CFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E239EE6C-977C-F364-379F-7E0BC2510CFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E239EE6C-977C-F364-379F-7E0BC2510CFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E239EE6C-977C-F364-379F-7E0BC2510CFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B5620B5-F452-4D4A-9668-64A3DA32F50F}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,38 @@
+@page
+@model ProjektApp.Pages.Projects.IndexModel
+
+<h2>Projekt</h2>
+
+<p>
+    <a class="btn btn-primary" asp-page="Create">+ Nytt projekt</a>
+</p>
+
+@if (Model.Projects.Count == 0)
+{
+    <p>Inga projekt hittades.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Titel</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model.Projects)
+        {
+            <tr>
+                <td>@item.Title</td>
+                <td>@item.Status</td>
+                <td>
+                    <a asp-page="Edit" asp-route-id="@item.Id">Redigera</a> |
+                    <a asp-page="Delete" asp-route-id="@item.Id">Ta bort</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}

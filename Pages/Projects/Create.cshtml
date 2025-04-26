@@ -1,0 +1,23 @@
+@page
+@model ProjektApp.Pages.Projects.CreateModel
+
+<h2>Skapa nytt projekt</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Project.Title"></label>
+        <input asp-for="Project.Title" class="form-control" />
+        <span asp-validation-for="Project.Title" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Project.Description"></label>
+        <textarea asp-for="Project.Description" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <label asp-for="Project.Status"></label>
+        <select asp-for="Project.Status" class="form-control" asp-items="Model.StatusList"></select>
+        <span asp-validation-for="Project.Status" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Spara</button>
+    <a asp-page="./Index" class="btn btn-secondary">Avbryt</a>
+</form>
